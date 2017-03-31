@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>First Training</title>
+  <title>Sejin's Website</title>
+  <link href="https://fonts.googleapis.com/css?family=Lusitana" rel="stylesheet" type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet" type='text/css'>
   <!-- meta -->
   <meta charset="utf-8" />
   <meta name="description" content="Personal Site">
@@ -19,8 +21,48 @@
 </head>
 <body>
   <div id="page-wrapper">
-    <h1>Sejin</h1>
-    <img src="sejin.jpg" alt="sejin">
+    <header>
+
+        <h1>SEJIN<br>PARK</h1>
+   
+
+      <img src="sejin(3).jpg" alt="sejin">
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <div id="trigger">
+          <li><a href="#">My Work</a></li>
+          </div>
+          <div class="submenu">
+            <li><a href="#">Contact me</a>
+            
+              <ul>
+                <li><a href="http://www.linkedin.com/in/sejin-park-559407140/">LinkedIn</a></li>
+                <li><a href="https://github.com/sejinpark0209">GitHub</a></li>
+              </ul>
+            </li>
+          </div>
+        </ul>
+
+    </header>
+    <div class = "main">
+
+    </div>
+    <div class = "footer">
+      <div class = "contact">
+        <input type="email" placeholder="Your email">
+        <input type="submit">
+      </div>
+
+    </div>
   </div>
 </body>
+<script>
+  var warnProject = document.getElementById('trigger');
+  warnProject.addEventListener('click', popUp);
+
+  function popUp(event){
+    alert("Come back next week!");
+  }
+</script>
 </html>
